@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 2</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+
+<body>
+	<div id="fb-root"></div>
+  <!-- Header -->
+  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+	<div id="heading">Flicker Photo Gallery</div>
+	<div id="fb-button" scope="user_likes" onlogin="loggedin()" class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false" data-width=""></div>
+	<a href="app.html" target="_self"> <button class="guest"><span> Continue </span></button> </a>
+  </header>
+  
+  <!-- First Grid -->
+  <div class="firstGrid">
+		<h1>Search Flicker Library</h1>
+		<p> This Web application allows you to search for photos shared on flicker. 
+		</br>This photo gallery uses flicker api to fetch interesting photos or 
+			photos releted to the searched title. You can also select any tag to retrieve photos
+		</br>The flicker api do not require you to login to flicker in order to retrieve photos
+		</p>
+  </div>
+  
+  <!-- Second Grid -->
+  <div class="SecondGrid">
+		<h1>Log In with Facewbook</h1>
+		<p"> One of the great thing about this app is it allows you to search photos related to your interests.
+	  </br> Facebook login is required to allow access to your Facebook Likes. This app only retrieves the pages you have liked on
+			facebook.
+		</br> Once loggedin, you will see your likes in the tags bar with a facebook logo. 
+		</br>Click on any tag to get photos related to that title
+		</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 2</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head> 
+
+<body>
+	<!-- Div for facebook button -->
+	<div id="fb-root"></div>
+	
+	<!-- Top navigation bar -->
+	<div class="topnav">
+		<div id="login-button" scope="user_likes" onlogin="loggedin()" class="fb-login-button" data-size="large" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="false" data-width=""></div>
+		<div class="search-container">
+			<input id="userIn" type="text" placeholder="Search.." name="search">
+			<button><i class="fa fa-search"></i></button>
+		</div>
+	</div>
+
+	<!-- Scrollmanu which contains tags -->
+	<div class="scrollmenu">
+		<div class="items" val="Car"><img src="assets/9514c74a38742c06c6518ed333723ce8.jpeg"> Cars </div>
+		<div class="items" val="Nature"><img src="assets/cbe2a3892fbb6b3a22edbd3124e359e0.jpg"> Nature </div>
+		<div class="items" val="Flowers"><img src="assets/db61b1daf7476fa83b3b10d9e46862c5.jpeg"> Flowers </div>
+		<div class="items" val="Birds"><img src="assets/7ba350065a39b7d0c4abf65e7c9cd3b8.jpeg"> Birds </div>
+		<div class="items" val="Dogs"><img src="assets/587dbbc9d6891a4082f6bff135169f85.jpeg"> Dogs </div>
+		<div class="items" val="Cats"><img src="assets/746788cfc6f0da6863df10685f668ef1.jpeg"> Cats </div>
+	</div>
+	
+	<!-- Div in which photos are displayed after retrieving from flicker -->
+	<div id="row" class="row"> </div>
+	
+	<footer> By: Ahmed Faraz </footer>
+	
+	<!-- The modal container that displays full size image -->
+	<div id="modal-container">
+		<span id="modal-close"><i class="fa fa-close"></i></span>
+		<img id="modal-content">
+		<div id="modal-caption"></div>
+	</div>
+<script src="app.bundle.js"></script></body>
+
+</html>
